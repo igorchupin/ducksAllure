@@ -30,9 +30,6 @@ public class Listener implements ITestListener {
         return screenshot;
     }
 
-
-
-
     @Override
     public void onStart(ITestContext context) {
       logger.info("On Start");
