@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import pageOblects.MainPage;
 import pageOblects.RubberDucksPage;
 
@@ -13,7 +14,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.open;
 
-//@Listeners (Listener.class)
+@Listeners(Listener.class)
 
 public class BaseTest {
     protected String base_URL = "https://litecart.stqa.ru/en/";

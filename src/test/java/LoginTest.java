@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,6 +11,8 @@ public class LoginTest extends BaseTest {
     Logger logger = Logger.getLogger(LoginTest.class);
 
     @Test
+    @Description("adaassssv")
+    @Epic("Epic")
     public void TestIncorrectLogin() {
         logger.info("TestIncorrectLogin()");
         mainPage.fillIncorrectLoginAndSend();
@@ -17,6 +21,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @Description("TestCorrectLoginTestCorrectLoginTestCorrectLogin")
     public void TestCorrectLogin() {
         logger.info("TestCorrectLogin()");
         mainPage.fillCorrectLoginAndSend();
